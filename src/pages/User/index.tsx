@@ -4,6 +4,7 @@ import CardRepos, { IRepos } from '../../components/CardRepos';
 import { IUser } from '../../components/CardUser';
 import Users from '../../services/Users';
 import './styles.css';
+import Footer from '../../components/Footer';
 
 const User = () => {
   const { goBack, location } = useHistory<{
@@ -170,6 +171,7 @@ const User = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </body>
   );
