@@ -4,6 +4,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## utilized
 
 - React JS
@@ -13,6 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Css
 - Mocha
 - Chai
+
+## Open Heroku
+ - [`apigithubchallenge`](https://apigithubchallenge.herokuapp.com/)
+
+**If you don't open the page on the first attempt, try reloading again**
 
 ## Configurar ambiente
 
