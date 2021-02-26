@@ -162,7 +162,7 @@ const User = () => {
                 <div className="loading d-flex justify-content-center">
                   {loading && (
                     <div
-                      className=" spinner-border text-success mt-5"
+                      className=" spinner-border text-success  mb-5"
                       role="status"
                     />
                   )}
