@@ -22,16 +22,9 @@ interface IPropsUser {
 const CardUser = ({ user }: IPropsUser) => {
   const history = useHistory();
 
-  const handleClick = useCallback(() => {
-    // history.push({
-    //   pathname: '/user',
-    //   state: { user: user },
-    // });
-  }, [history, user]);
-
   return (
     <div className=" mx-auto  mt-5">
-      <div className="card" onClick={handleClick}>
+      <div className="card">
         <div className="card-body">
           <img
             src={user.avatar_url}
