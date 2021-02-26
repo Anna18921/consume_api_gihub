@@ -1,4 +1,3 @@
-import './styles.css';
 export interface IRepos {
   id: number;
   name: string;

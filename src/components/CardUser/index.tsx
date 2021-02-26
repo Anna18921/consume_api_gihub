@@ -1,6 +1,4 @@
-import { useCallback } from 'react';
 import { useHistory } from 'react-router';
-import './styles.css';
 
 export interface IUser {
   id: number;
@@ -11,7 +9,6 @@ export interface IUser {
   followers: number;
   following: number;
   location: string;
-  bio: string;
   public_repos: number;
 }
 
