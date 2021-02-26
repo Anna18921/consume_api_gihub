@@ -1,0 +1,97 @@
+.container-fluid {
+  background-color: #343a40;
+  overflow-y: auto;
+}
+.buttons {
+  margin-top: 45px;
+}
+
+@media (max-width: 1200px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .about {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .imge-profile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-about {
+    justify-content: center;
+  }
+
+  .count {
+    margin-top: 50px !important;
+    width: 50%;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .count {
+    margin-top: 50px !important;
+    width: 100% !important;
+  }
+
+  .count-item {
+    width: 33%;
+  }
+
+  .h2 {
+    font-size: 20px !important;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .info h6 {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .button {
+    margin-left: 20px !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .button {
+    margin: 0px !important;
+    padding: 0px;
+    font-size: 14px;
+  }
+
+  .info h6 {
+    font-size: 14px !important;
+  }
+}
