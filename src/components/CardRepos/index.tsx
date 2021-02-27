@@ -1,3 +1,4 @@
+import './styles.css';
 export interface IRepos {
   id: number;
   name: string;
@@ -14,33 +15,34 @@ interface IProps {
 }
 const CardRepos = ({ card }: IProps) => {
   return (
-    <div className="  mb-5 m-2">
+    <div className="  mb-5">
       <div
-        className="card bg-dark border-dark text-light shadow-lg p-3 mb-5  rounded
+        className="card card-repos bg-dark border-dark text-light shadow-lg mb-5  rounded
       "
       >
         <div className="card-body ">
           <h5 className="card-title">{card.name}</h5>
-          <div className=" row my-3">
+          <div className=" badges row my-3">
             {card.fork && (
-              <span className="card-subtitle  rounded bg-primary p-1 mb-3 text-light ">
+              <span className="badge badge-secondary  bg-primary p-1 ml-3 mb-3 text-light ">
                 Fork
               </span>
             )}
+
+            <span className="rounded badge badge-secondary p-1 ml-2 mb-3 text-light">
+              {card.private ? 'Private' : 'Public'}
+            </span>
             {card.language && (
-              <span className="card-subtitle rounded bg-primary p-1 ml-2  mb-3 text-light">
+              <span className="badge badge-secondary  bg-primary p-1 ml-2  mb-3 text-light">
                 {card.language}
               </span>
             )}
 
-            <span className="card-subtitle rounded bg-primary p-1 ml-2 mb-3 text-light">
-              {card.private ? 'Private' : 'Public'}
-            </span>
-
-            <span className="card-subtitle rounded bg-warning p-1 ml-2 mb-3 text-light">
+            <span className="badge badge-secondary  bg-warning p-1 ml-2 mb-3 text-light">
               stars {card.stargazers_count}
             </span>
           </div>
+
           <p className="card-text">{card.description}</p>
 
           <a
