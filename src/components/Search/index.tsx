@@ -15,11 +15,15 @@ const Search = ({ submit, placeholder }: ISearch) => {
     [submit, value]
   );
   return (
-    <form className="card" onSubmit={handleSubmit}>
-      <div className="card-body row no-gutters">
+    <form
+      className="card shadow-lg mb-5  rounded bg-dark"
+      onSubmit={handleSubmit}
+    >
+      <div className="card-body row">
         <div className="col">
           <input
-            className="form-control form-control-lg form-control-borderless"
+            autoFocus={true}
+            className="form-control form-control-lg border-0 bg-dark text-light"
             type="text"
             placeholder="Search username "
             value={value}
