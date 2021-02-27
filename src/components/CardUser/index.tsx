@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router';
+import './styles.css';
 
 export interface IUser {
   id: number;
@@ -10,6 +11,8 @@ export interface IUser {
   following: number;
   location: string;
   public_repos: number;
+  company: string;
+  bio: string;
 }
 
 interface IPropsUser {
@@ -20,22 +23,24 @@ const CardUser = ({ user }: IPropsUser) => {
   const history = useHistory();
 
   return (
-    <div className=" mx-auto  mt-5">
-      <div className="card">
+    <div className="mt-5">
+      <div className="mx-auto card-user card shadow-lg mb-5  rounded bg-dark">
         <div className="card-body">
           <img
             src={user.avatar_url}
             alt="avatar user"
-            className="float-left rounded-circle w-25 mr-5"
+            className="float-top rounded-circle w-25 mr-5"
           />
-          <div className="message ">
-            <h5 className="card-title ">{user.name}</h5>
-            <h6 className="card-subtitle mb-3 text-muted">
+          <div className="message mt-4 ">
+            <h5 className="card-title text-light ">{user.name}</h5>
+            <h6 className="card-subtitle text-light mb-3">
               Username: {user.login}
             </h6>
-            <h6 className="card-subtitle mb-3 text-muted">
-              Location: {user.location}
-            </h6>
+            {user.location && (
+              <h6 className="card-subtitle text-light mb-3">
+                Location: {user.location}
+              </h6>
+            )}
           </div>
           <div className="actions">
             <button
