@@ -19,6 +19,7 @@ describe('Test Endpoints API Github V3', () => {
         chai.expect(res.body.followers).to.be.a('number');
         chai.expect(res.body.location).to.be.a('string');
         chai.expect(res.body.bio).to.be.a('string');
+        chai.expect(res.body.company).to.be.a('string');
         chai.expect(res.body.public_repos).to.be.a('number');
 
         done();
