@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import CardRepos, { IRepos } from '../../components/CardRepos';
+import { IRepos } from '../../components/CardRepos';
 import { IUser } from '../../components/CardUser';
+import { CardRepos, Footer } from '../../components';
 import Users from '../../services/Users';
 import './styles.css';
-import Footer from '../../components/Footer';
 
 const User = () => {
   const { goBack, location } = useHistory<{

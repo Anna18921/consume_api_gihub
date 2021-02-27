@@ -1,10 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import Helmet from 'react-helmet';
-import Search from '../../components/Search';
-import CardUser, { IUser } from '../../components/CardUser';
 import Users from '../../services/Users';
+import { CardUser, Footer, Search } from '../../components';
+import { IUser } from '../../components/CardUser';
 import './styles.css';
-import Footer from '../../components/Footer';
 import Image from '../../assets/images/githublogo.jpg';
 const Home = () => {
   const [loading, setLoading] = useState(false);
